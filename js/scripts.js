@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Load content from JSON
-    fetch('/data/content.json', {crossorigin: "anonymous"})
+    fetch('/about-me-website/data/content.json', {crossorigin: "anonymous"})
         .then(response => response.json())
         .then(data => {
             document.getElementById('name').textContent = data.name;
